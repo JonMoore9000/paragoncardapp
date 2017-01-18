@@ -1,4 +1,4 @@
-// API Key: e5f6ebdd3c1e4fd6988d1e5fa90d9ecd
+
 // https://developer-paragon.epicgames.com
 // https://developer-paragon.epicgames.com//v1/cards
 //const descrp = effects.find(item => item.hasownproperty)'description)).descrition'
