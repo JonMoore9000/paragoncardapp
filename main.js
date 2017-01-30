@@ -4,14 +4,11 @@
 //const descrp = effects.find(item => item.hasownproperty)'description)).descrition'
 
 var baseUrl = 'https://developer-paragon.epicgames.com/v1/cards/complete';
+var local = 'http://localhost:8080/cards';
 
 function getData(callback) {
 	var query = {
-		url: baseUrl,
-		headers: {
-			'X-Epic-ApiKey': 'e5f6ebdd3c1e4fd6988d1e5fa90d9ecd',
-			'Access-Control-Allow-Origin': '*',
-		},
+		url: local,
 		type: 'GET',
 		dataType: 'json',
 		success: callback,
@@ -34,10 +31,36 @@ function displayData(data) {
 function submitSearch(event) {
 	$('.js-button').click(function(event) {
 		event.preventDefault();
+		$('.homePage').addClass('invisible');
+		$('.resourcesPage').addClass('invisible');
+		$('.howItWorksPage').addClass('invisible');
+		$('.cardsPage').removeClass('invisible');
 		getData(displayData);
 	});
 };
 
+function toHIWPage(event) {
+	$('.js-button1').click(function(event) {
+		event.preventDefault();
+		$('.homePage').addClass('invisible');
+		$('.cardsPage').addClass('invisible');
+		$('.resourcesPage').addClass('invisible');
+		$('.howItWorksPage').removeClass('invisible');
+	});
+}
+
+function toResourcesPage(event) {
+	$('.js-button2').click(function(event) {
+		event.preventDefault();
+		$('.homePage').addClass('invisible');
+		$('.cardsPage').addClass('invisible');
+		$('.howItWorksPage').addClass('invisible');
+		$('.resourcesPage').removeClass('invisible');
+	});
+}
+
 $(function() {
 	submitSearch();
+	toHIWPage();
+	toResourcesPage();
 });
