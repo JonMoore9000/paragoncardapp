@@ -3,11 +3,54 @@
 }
 
 body {
-	background-color: black;
+	background-image: url(images/card-bck.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/*background-color: black;*/
 }
 
 .container {
 	text-align: center;
+	font-family: 'Questrial', sans-serif;
+}
+
+.homeSection {
+	background-color: rgba(0, 0, 0, .7);
+	margin-top: 80px;
+	padding: 20px;
+	width: 100%;
+}
+
+.title {
+	color: white;
+	font-family: 'Questrial', sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.description { 
+	color: white;
+	font-family: 'Questrial', sans-serif;
+	font-size: 25px;
+}
+
+.buttonRow {
+	margin-top: 40px;
+}
+
+.menuBtn {
+	background-color: rgba(0, 0, 0, .5);
+	color: white;
+	border: 1px solid white;
+	width: 200px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.menuBtn:hover {
+	color: black;
+	background-color: white;
 }
 
 button {
@@ -43,4 +86,85 @@ button {
 
 .each-card:hover {
 	border: 1px solid white;
+}
+
+.howItWorksPage {
+	color: white;
+	font-family: 'Questrial', sans-serif;
+	font-size: 20px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.hiwHeaders {
+	width: 100%;
+	background-color: #dbbd68;
+	color: black;
+	font-size: 27px;
+	padding: 5px;
+}
+
+.cardTypeImages {
+	height: 350px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.CCimage {
+	width: 800px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.red {
+	color: red;
+	font-weight: bold;
+}
+
+.blue {
+	color: blue;
+	font-weight: bold;
+}
+
+.yellow {
+	color: yellow;
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 500px;
+}
+
+th {
+	background-color: #dbbd68;
+	color: black;
+}
+
+td, th {
+	border: 1px solid white;
+}
+
+.inGame {
+	width: 800px;
+}
+
+.resourcesPage {
+	background-color: rgba(0, 0, 0, .7);
+	padding: 20px;
+	color: white;
+}
+
+.resourceD {
+	font-size: 24px;
+}
+
+.videos {
+	display: inline-block;
+}
+
+.invisible {
+	display: none;
 }
